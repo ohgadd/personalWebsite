@@ -33,3 +33,7 @@ footer{
 .aboutImg {
     width: 200px;
 }
+
+section {
+  width:100%;
+}
