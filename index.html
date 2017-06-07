@@ -14,7 +14,7 @@
       <img class="figure-img headerLogo img-fluid mx-auto mt-2" src="images/logoWhite.png" alt="Logo">
     </figure>
 
-    <ul class="nav nav-fill mb-3">
+    <ul class="nav navigBar nav-fill mb-3">
       <a class="nav-item bg-inverse text-white nav-link active" href="#">Home</a>
       <a class="nav-item bg-inverse text-white nav-link" href="#aboutMe">About</a>
       <a class="nav-item bg-inverse text-white nav-link" href="#portfolio">Portfolio</a>
@@ -26,57 +26,70 @@
 
 <div class="container">
 
-  <section id="aboutMe" class="aboutMe float-left mb-3">
+  <section id="aboutMe" class="aboutMe  mb-3">
 
     <h2 class="text-md-right text-center"><em>About Me</em></h2>
     <hr>
-    <img class="aboutImg float-right img-fluid rounded-circle" src="images/temp.png">
-    <p>Hi, I'm Josh Gadd and my passion lays within front-end web development.
-      <br><br>I am a highly motivated person who can complete a wide range of tasks in the workplace. I am ambitious and have great adaptability when working. I’d think of myself to be very organised and have good time management skills. <br>
-      My passion lies within web development, mainly front-end web development. I began learning development skills during my college course, consisting of basic HTML4 and CSS. However I didn’t begin to realise how much I enjoyed it until the second year of my university course, during optional unit choices.
+    <div class="aboutImg float-md-right">
+      <img class="img-fluid rounded-circle mx-auto" src="images/temp.png">
+    </div><br>
+    <p>Hi, I'm Josh Gadd and my passion lies within front-end web development.
+      <br><br>I first began web development during my college course, where I learned about basic HTML4 and CSS. This included things such as the box model and basic styling. It was not until a while later that I realised this is what I wanted to do. During my university course, which was based on Computer Forensics and Security, the first year held a unit based on User Centered Web Development which is where I started to notice I was actually enjoying completing assignments. Later on, in second year I took an optional unit based on Web Technology Integration, in which we learned about Content Management Systems and this is where I really found out what I wanted to pursue, which was front-end web development.
     </p>
 
 
   </section>
 
-  <section class="keySkills mb-3 float-left">
+  <section class="keySkills mb-3 ">
 
     <h2 class="text-md-right text-center"><em>Key Skills</em></h2>
     <hr>
 
-    <section class="skillsLogos text-center">
-      <a href="#html">
-        <figure class="figure">
-          <img class="imgSkills figure-img img-fluid" src="images/htmlLogo.png">
-          <figcaption class="figure-caption text-center">HTML5</figcaption>
-        </figure>
-      </a>
+    <section class="container" id="skillsGrid">
+      <div class="row">
 
-      <a href="#css">
-        <figure class="figure">
-          <img class="imgSkills figure-img img-fluid" src="images/cssLogo.png">
-          <figcaption class="figure-caption text-center">CSS3</figcaption>
-        </figure>
-      </a>
+        <article class="col">
+          <a href="#html">
+          <img class="mx-auto" src="images/htmlLogo.png">
+          <p class="figure-caption text-center">HTML5</p>
+          </a>
+          <p class="figure-caption text-center text-justify">Began with HTML4 during college, as HTML5 was only just beginning to appear. HTML5 is now the upper standard of basic web-based languages due to its much improved handing of web applications, pretty much destroying any use of Adobe Flash.</p>
+        </article>
 
-      <a href="#bootstrap">
-        <figure class="figure">
-          <img class="imgSkills figure-img img-fluid" src="images/bootstrapLogo.png">
-          <figcaption class="figure-caption text-center">Bootstrap 4</figcaption>
-        </figure>
-      </a>
+
+        <article class="col">
+          <a href="#css">
+          <img class="mx-auto" src="images/cssLogo.png">
+          <p class="figure-caption text-center">CSS3</p>
+          </a>
+          <p class="figure-caption text-center text-justify">Began with HTML4 during college, as HTML5 was only just beginning to appear. HTML5 is now the upper standard of basic web-based languages due to its much improved handing of web applications, pretty much destroying any use of Adobe Flash.</p>
+        </article>
+
+
+        <article class="col">
+          <a href="#bootstrap">
+          <img class="mx-auto" src="images/bootstrapLogo.png">
+          <p class="figure-caption text-center">Bootstrap 4</p>
+        </a>
+        <p class="figure-caption text-center text-justify">Began with HTML4 during college, as HTML5 was only just beginning to appear. HTML5 is now the upper standard of basic web-based languages due to its much improved handing of web applications, pretty much destroying any use of Adobe Flash.</p>
+        </article>
+      </div>
+    </section>
 
     </section>
 
     <section class="skillsDescrption">
       <h6 id="html">HTML 5 -</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh.</p>
+      <p>Began with HTML4 during college, as HTML5 was only just beginning to appear. HTML5 is now the upper standard of basic web-based languages due to its much improved handing of web applications, pretty much destroying any use of Adobe Flash.</p>
 
       <h6 id="css">CSS 3 -</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh.</p>
+      <p>CSS, or Cascade Styling Sheets, are the set standard for any form of styling on a webpage. </p>
 
       <h6 id="bootstrap">Bootstrap 4 -</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh.</p>
+
+      <h6>Additional Skills -</h6>
+      <p>Data Entry, Wordpress</p>
 
       <h6>Future Learning -</h6>
       <p>Languages for the future include: Javascript, JQuery, PHP, MySQL</p>
@@ -85,7 +98,7 @@
 
   </section>
 
-  <section id="portfolio" class="portfolio float-left mb-3 text-center">
+  <section id="portfolio" class="portfolio  mb-3 text-center">
 
     <h2 class="text-md-right text-center"><em>Portfolio</em></h2>
     <hr>
@@ -94,7 +107,7 @@
 
   </section>
 
-  <section class="education float-left mb-3">
+  <section class="education  mb-3">
 
     <h2 class="text-md-right text-center"><em>Education</em></h2>
     <hr>
@@ -109,7 +122,7 @@
 
   </section>
 
-  <section class="experience float-left mb-3">
+  <section class="experience  mb-3">
     <h2 class="text-md-right text-center"><em>Experience</em></h2>
     <hr>
 
@@ -124,10 +137,10 @@
 
 </div><!-- container -->
 
-<footer class="float-left">
-  <div class="container mt-4 text-center text-white">
+<footer>
+  <div class="container mb-2 text-center text-white">
     <h6>Contact Information</h6>
-    <ul>
+    <ul class="list-unstyled">
       <li>Email: joshgadd1997@gmail.com</li>
       <li>Phone Number: (+44)07799 835031</li>
     </ul>
