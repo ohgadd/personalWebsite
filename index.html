@@ -9,43 +9,41 @@
   <title>Joshua Gadd - Front-End Web Developer</title>
 </head>
 <body>
-  <header>
+  <header class="mb-4">
     <figure class="text-center">
-      <img class="figure-img headerLogo img-fluid mx-auto mt-2" src="images/logoWhite.png" alt="Logo">
+      <img class="figure-img headerLogo img-fluid mx-auto" src="images/logoWhite.png" alt="Logo">
     </figure>
-
-    <ul class="nav navigBar nav-fill mb-3">
+    <ul id="navbar" class="nav nav-fill">
       <a class="nav-item bg-inverse text-white nav-link active" href="#">Home</a>
       <a class="nav-item bg-inverse text-white nav-link" href="#aboutMe">About</a>
       <a class="nav-item bg-inverse text-white nav-link" href="#portfolio">Portfolio</a>
       <a class="nav-item bg-inverse text-white nav-link" href="#">Contact</a>
-    </ul>
-  </div>
+      </ul>
 
 </header>
 
 <div class="container">
 
-  <section id="aboutMe" class="aboutMe  mb-3">
+  <section id="aboutMe" class="aboutMe mb-4">
 
     <h2 class="text-md-right text-center"><em>About Me</em></h2>
     <hr>
-    <div class="aboutImg float-md-right">
+    <div class="aboutImg ml-5 float-md-right">
       <img class="img-fluid rounded-circle mx-auto" src="images/temp.png">
     </div><br>
-    <p>Hi, I'm Josh Gadd and my passion lies within front-end web development.
+    <p class="aboutText">Hi, I'm Josh Gadd and my passion lies within front-end web development.
       <br><br>I first began web development during my college course, where I learned about basic HTML4 and CSS. This included things such as the box model and basic styling. It was not until a while later that I realised this is what I wanted to do. During my university course, which was based on Computer Forensics and Security, the first year held a unit based on User Centered Web Development which is where I started to notice I was actually enjoying completing assignments. Later on, in second year I took an optional unit based on Web Technology Integration, in which we learned about Content Management Systems and this is where I really found out what I wanted to pursue, which was front-end web development.
-    </p>
+    </p><br>
 
 
   </section>
 
-  <section class="keySkills mb-3 ">
+  <section class="keySkills mb-4 ">
 
-    <h2 class="text-md-right text-center"><em>Key Skills</em></h2>
+    <h2 id="keySkills" class="text-md-right text-center"><em>Key Skills</em></h2>
     <hr>
 
-    <section class="container" id="skillsGrid">
+    <section id="skillsGrid">
       <div class="row">
 
         <article class="col">
@@ -79,15 +77,6 @@
     </section>
 
     <section class="skillsDescrption">
-      <h6 id="html">HTML 5 -</h6>
-      <p>Began with HTML4 during college, as HTML5 was only just beginning to appear. HTML5 is now the upper standard of basic web-based languages due to its much improved handing of web applications, pretty much destroying any use of Adobe Flash.</p>
-
-      <h6 id="css">CSS 3 -</h6>
-      <p>CSS, or Cascade Styling Sheets, are the set standard for any form of styling on a webpage. </p>
-
-      <h6 id="bootstrap">Bootstrap 4 -</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh.</p>
-
       <h6>Additional Skills -</h6>
       <p>Data Entry, Wordpress</p>
 
@@ -98,16 +87,56 @@
 
   </section>
 
-  <section id="portfolio" class="portfolio  mb-3 text-center">
+  <section id="portfolio" class="portfolio  mb-4">
 
     <h2 class="text-md-right text-center"><em>Portfolio</em></h2>
     <hr>
+    <div class="carousel slide" id="featured" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#featured" data-slide-to="0" class="active">
+        <li data-target="#featured" data-slide-to="1">
+        <li data-target="#featured" data-slide-to="2">
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+      <img class="d-block img-fluid" src="images/portfolioOne.png">
+      <div class="carousel-caption">
+        <h6>Personal Website</h6>
+        <p id="portfolioCaption" class="small d-none d-md-block text-center">A great example of my latest work is this site itself, created from scratch using HTML, CSS and Bootstrap. This was infact the first time I've used Bootstrap and it was a good bit of experience, however I did find myself using custom CSS alongside it. In the future I am planning on developing my personal CSS styling package that could be used amonst multple projects</p>
+      </div>
+    </div><!--carousel-item1-->
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="images/portfolioTwo.png">
+      <div class="carousel-caption">
+        <h6>University Wordpress Website, for a 'Client'</h6>
+        <p id="portfolioCaption" class="small d-md-block d-none text-center">For a university assignment, in the Web Technology Integration unit, we were assigned a task of using Wordpress to design a site with the 'Purbeck Information Center' being the clients. Within this assignment, we had to include functions such as a booking form, testimonial section, blog section and contact form. We also had to ensure the website was responsive depending on device, which was my first experience at building a responsive website.</p>
+      </div>
+    </div><!--carousel-item2-->
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="images/portfolioThree.png">
+    </div><!--carousel-item3-->
+    </div><!--carousel-inner-->
+    <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+        <span class="sr-only">Previous</span>
+      </span>
+    </a>
+    <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true">
+        <span class="sr-only">Previous</span>
+      </span>
+    </a>
+  </div><!--carousel-->
+  <br>
+  <div id="portfolioDescription" class="d-block d-md-none">
+  <h5>Personal Website</h5>
+  <p>For a university assignment, in the Web Technology Integration unit, we were assigned a task of using Wordpress to design a site with the 'Purbeck Information Center' being the clients. Within this assignment, we had to include functions such as a booking form, testimonial section, blog section and contact form. We also had to ensure the website was responsive depending on device, which was my first experience at building a responsive website.</p>
 
-    <h1 class="display-4">Section In Progress..</h1>
-
+  <h5>University Wordpress Website, for a 'client'</h5>
+  <p>For a university assignment, in the Web Technology Integration unit, we were assigned a task of using Wordpress to design a site with the 'Purbeck Information Center' being the clients. Within this assignment, we had to include functions such as a booking form, testimonial section, blog section and contact form. We also had to ensure the website was responsive depending on device, which was my first experience at building a responsive website.</p>
   </section>
 
-  <section class="education  mb-3">
+  <section class="education  mb-4">
 
     <h2 class="text-md-right text-center"><em>Education</em></h2>
     <hr>
@@ -122,13 +151,17 @@
 
   </section>
 
-  <section class="experience  mb-3">
+  <section class="experience  mb-4">
     <h2 class="text-md-right text-center"><em>Experience</em></h2>
     <hr>
 
+    <h5>Work Experience @ CR-eative Design</h5>
+    <h6 class="text-right">March 2017 - 1 Month</h6>
+    <p>Data Entry, Dealing with Customers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ut euismod ex. Duis id orci nec justo aliquam blandit. Nullam erat tellus, pulvinar vitae lorem eu, rhoncus gravida ex. Pellentesque malesuada justo diam, eu dapibus nibh semper ac. Nullam non pretium neque, id venenatis risus. Nam libero mauris, iaculis ut rutrum non, luctus vitae eros. Donec ullamcorper vel est sed ultrices. Phasellus porta nibh sem, nec finibus mauris sodales at.</p><br>
+
     <h5>Cashier at Coral Betting</h5>
     <h6 class="text-right">October 2016 - June 2017</h6>
-    <p>Data Entry, Dealing with Customers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ut euismod ex. Duis id orci nec justo aliquam blandit. Nullam erat tellus, pulvinar vitae lorem eu, rhoncus gravida ex. Pellentesque malesuada justo diam, eu dapibus nibh semper ac. Nullam non pretium neque, id venenatis risus. Nam libero mauris, iaculis ut rutrum non, luctus vitae eros. Donec ullamcorper vel est sed ultrices. Phasellus porta nibh sem, nec finibus mauris sodales at.</p>
+    <p>Data Entry, Dealing with Customers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi orci, eu dictum quam dignissim non. Pellentesque venenatis suscipit ultricies. Curabitur varius, lorem eu suscipit tristique, sem diam rhoncus nibh, at volutpat erat turpis nec nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ut euismod ex. Duis id orci nec justo aliquam blandit. Nullam erat tellus, pulvinar vitae lorem eu, rhoncus gravida ex. Pellentesque malesuada justo diam, eu dapibus nibh semper ac. Nullam non pretium neque, id venenatis risus. Nam libero mauris, iaculis ut rutrum non, luctus vitae eros. Donec ullamcorper vel est sed ultrices. Phasellus porta nibh sem, nec finibus mauris sodales at.</p><br>
 
     <h5>Auditor for Serve Legal</h5>
     <h6 class="text-right">October 2015 - October 2016</h6>
@@ -147,7 +180,7 @@
   </div>
 </footer>
 
-<script src="js/jquery.slim.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
