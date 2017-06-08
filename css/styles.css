@@ -1,14 +1,14 @@
 header{
-    padding-top: 10px;
-    background-image: url(../images/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width:auto;
+  padding-top: 10px;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width:auto;
 }
 
 body{
-    background-color:#f9f9f9;
+  background-color:#f9f9f9;
 }
 
 #navbar {
@@ -19,16 +19,17 @@ body{
 }
 
 footer{
-    background-color: #292b2c;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
-    position: relative;
-    height: auto;
-    width: 100%;
-    padding-bottom:10px;
+  background-color: #292b2c;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding-bottom:10px;
 }
 
 #keySkills {
   width:100%;
+  clear:left;
 }
 
 .imgSkills {
@@ -47,19 +48,18 @@ footer{
 }
 
 .headerLogo {
-    object-fit: cover;
-    width: 500px;
-    display: block;
-}
-
-.aboutImg {
-  width:auto;
-}
-
-.aboutImg img{
-  max-width: 200px;
+  object-fit: cover;
+  width: 500px;
   display: block;
-  position: relative;
+}
+
+#aboutMe {
+}
+
+#aboutImg {
+}
+
+#aboutText {
 }
 
 section {
@@ -80,6 +80,7 @@ html {
   html {
     font-size: 20px;
   }
+
 }
 
 @include media-breakpoint-up(lg) {
