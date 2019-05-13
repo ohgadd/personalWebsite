@@ -99,3 +99,32 @@ html {
   background-color: rgb(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 290px;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display:block;
+}
+
+.flex{
+  display: flex;
+  justify-content:space-between;
+}
+
+.left {
+}
+
+.right {
+}
+
+.course {
+  font-size: 16px;
+}
+
+.grade {
+
+}
