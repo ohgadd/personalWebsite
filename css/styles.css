@@ -128,3 +128,7 @@ html {
 .grade {
 
 }
+
+ul {
+  list-style-type: square;
+}
