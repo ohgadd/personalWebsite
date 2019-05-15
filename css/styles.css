@@ -33,11 +33,13 @@ footer{
 }
 
 .imgSkills {
-  width:20%;
+  margin: auto;
+  width:50%;
 }
 
 .imgSkills img {
   max-width: 200px;
+  margin: auto;
   display:flex;
   object-fit:contain
 }
@@ -132,3 +134,14 @@ html {
 ul {
   list-style-type: square;
 }
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+}
+
+.html {width: 100%; background-color: #4CAF50;} /* Green */
+.css {width: 100%; background-color: #2196F3;} /* Blue */
+.js {width: 60%; background-color: #f44336;} /* Red */
+.adobe {width: 80%; background-color: #808080;} /* Dark Grey */
