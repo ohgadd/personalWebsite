@@ -8,18 +8,18 @@ header{
 }
 
 body{
-  background-color:#f9f9f9;
+  background-color:#FDFFFC;
+  color:#011627;
 }
 
 #navbar {
-
   box-shadow: 0 -2px 6px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.5);
   position: relative;
-  background-color:#292b2c;
+  background-color:#011627;
 }
 
 footer{
-  background-color: #292b2c;
+  background-color: #011627;
   box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
   position: relative;
   height: auto;
@@ -135,13 +135,28 @@ ul {
   list-style-type: square;
 }
 
-.skills {
-  text-align: right; /* Right-align text */
-  padding: 10px; /* Add some padding */
-  color: white; /* White text color */
+@font-face {
+
 }
 
-.html {width: 100%; background-color: #4CAF50;} /* Green */
-.css {width: 100%; background-color: #2196F3;} /* Blue */
-.js {width: 60%; background-color: #f44336;} /* Red */
-.adobe {width: 80%; background-color: #808080;} /* Dark Grey */
+#skillsTable table, thead{
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 24px;
+}
+#skillsTable table, tbody{
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 16px;
+}
+
+#joke {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 20px;
+}
+
+#jokeContainer {
+  font-size: 20px;
+}
+
+#diffDad {
+  font-size: 16px;
+}

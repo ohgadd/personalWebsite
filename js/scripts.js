@@ -1,7 +1,12 @@
-$(document).ready(function () {
-$('#dtVerticalScrollExample').DataTable({
-"scrollY": "200px",
-"scrollCollapse": true,
-});
-$('.dataTables_length').addClass('bs-select');
-});
+function select(selector) {
+  return document.querySelector(selector);
+}
+getJoke();
+function getJoke() {
+
+  $.getJSON("https://icanhazdadjoke.com/", function(data) {
+  var joke = data.joke;
+
+  console.log(joke);
+  select("#joke").innerText = '\"' + joke + '\"';
+})};

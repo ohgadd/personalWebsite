@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Permanent+Marker" rel="stylesheet">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Joshua Gadd</title>
+
 </head>
 <body>
   <header class="mb-4">
@@ -25,7 +29,14 @@
   <div class="container">
 
     <section id="aboutMe" class="mb-4">
-      <h2 class="display-2 text-center">Josh Gadd</h2>
+      <h2 class="display-2 text-center mb-0">Hi, I'm Josh Gadd</h2><br>
+      <div class="text-center" id="jokeContainer">
+        <div id="joke">
+
+        </div>
+        <em>- some dad. </em><span id="diffDad" onclick="getJoke()">Different Dad?</span>
+      </div><br>
+      <h2 class="text-md-left text-center"><em>About Me</em></h2>
       <hr>
       <p id="aboutText" class="text-center lead">
         Passionate about computing and all areas of technology. Look forward to getting involved within the industry itself, with aims to progress as far as possible and be the best at what ever is in-front of me.
@@ -34,14 +45,46 @@
 
     <section id="keySkills" class="mb-4 ">
 
-      <h2 class="text-md-right text-center"><em>Key Skills</em></h2>
-      <hr>
-      <img class="img-fluid imgSkills rounded mx-auto d-block" src="images/skillsGrid.png">
+      <h2 class="text-md-left text-center"><em>Key Skills</em></h2>
+      <!-- <img class="img-fluid imgSkills rounded mx-auto d-block" src="images/skillsGrid.png">
       <br>
+      <hr> -->
+      <table id="skillsTable" class="table text-center mx-auto" id="KeySkills">
+        <thead>
+          <th class="text-center" scope="col">Skill</th>
+          <th scope="col">Confidence and Ability</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="align-middle  text-center" scope="row">HTML</th>
+            <td><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"></td>
+          </tr>
+          <tr>
+            <th class="align-middle text-center" scope="row">CSS</th>
+            <td><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png">
+          </tr>
+          <tr>
+            <th class="align-middle text-center" class="align-middle" scope="row">JavaScript</th>
+            <td><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/blank.png"><img src="images/blank.png">
+          </tr>
+          <tr>
+            <th class="align-middle text-center" scope="row">Photoshop</th>
+            <td><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/blank.png">
+          </tr>
+          <tr>
+            <th class="align-middle text-center" scope="row">Willingness to Learn</th>
+            <td><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"><img src="images/football.png"></td>
+          </tr>
+          <tr>
+            <th class="align-middle text-center" scope="row">Tea-Making</th>
+            <td><img src="images/mug.png"><img src="images/mug.png"><img src="images/mug.png"><img src="images/mug.png"><img src="images/mug.png"></td>
+          </tr>
+        </tbody>
+      </table>
     </section><!--keySkills-->
 
     <section id="portfolio" class="mb-4">
-      <h2 class="text-md-right text-center"><em>Portfolio</em></h2>
+      <h2 class="text-md-left text-center"><em>Portfolio</em></h2>
       <hr>
       <div class="carousel slide" id="featured" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -226,12 +269,6 @@
       </div>
     </footer>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
   </body>
   </html>
