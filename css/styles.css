@@ -27,11 +27,6 @@ footer{
   padding-bottom:10px;
 }
 
-#keySkills {
-  width:100%;
-  clear:left;
-}
-
 .imgSkills {
   margin: auto;
   width:50%;
@@ -139,13 +134,20 @@ ul {
 
 }
 
-#skillsTable table, thead{
-  font-family: 'Baloo Bhai', cursive;
-  font-size: 24px;
-}
-#skillsTable table, tbody{
-  font-family: 'Baloo Bhai', cursive;
+.scrollingTable table, thead{
   font-size: 16px;
+}
+
+.scrollingTable table {
+  border: 1px solid #011627;
+}
+
+.scrollingTable thead {
+  border-bottom: 1px solid #011627;
+}
+
+.scrollingTable table, tbody{
+  font-size: 14px;
 }
 
 #joke {
@@ -159,4 +161,135 @@ ul {
 
 #diffDad {
   font-size: 16px;
+}
+
+#keySkills {
+  position: relative;
+  width:100%;
+  margin: auto;
+}
+
+/* Container for skill bars */
+.skillsContainer {
+  width: 100%; /* Full width */
+  background-color: #FDFFFC; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+  border-radius: 20px;
+  border: 3px solid #011627;
+  margin-bottom: 10px;
+}
+
+.html {
+  width: 100%;
+
+  -o-animation: html 3s ease-out;
+  -webkit-animation: html 3s ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation: html 3s ease-out;
+  background-color: #011627;
+} /* Green */
+
+@keyframes html {
+  0%{
+    width: 0;
+    -webkit-transform : translateX(0);
+  }
+  100%{
+    width: 100%;
+    -webkit-transform : translateX(0);
+  }
+}
+
+.css {
+  width: 100%;
+  background-color: #2EC4B6;
+  animation: css 3s ease-out;
+  -o-animation: css 3s ease-out;
+  -webkit-animation: css 3s ease-out;
+} /* Blue */
+
+@keyframes css {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.javascript {
+  width: 60%;
+  background-color: #E71D36;
+  animation: javascript 3s ease-out;
+  -o-animation: javascript 3s ease-out;
+  -webkit-animation: javascript 3s ease-out;
+} /* Red */
+
+@keyframes javascript {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+.photoshop {
+  width: 80%;
+  background-color: #FF9F1C;
+  animation: photoshop 3s ease-out;
+  -o-animation: photoshop 3s ease-out;
+  -webkit-animation: photoshop 3s ease-out;
+} /* Dark Grey */
+
+@keyframes photoshop {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+.willingnessToLearn {
+  width: 100%;
+  background-color: #5ccf69;
+  animation: willingnessToLearn 3s ease-out;
+  -o-animation: willingnessToLearn 3s ease-out;
+  -webkit-animation: willingnessToLearn 3s ease-out;
+}
+
+@keyframes willingnessToLearn {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.teaMaking {
+  width: 100%;
+  background-color: #d5a86d;
+  animation: teaMaking 3s ease-out;
+  -o-animation: teaMaking 3s ease-out;
+  -webkit-animation: teaMaking 3s ease-out;
+}
+
+@keyframes teaMaking {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.skillName {
+   font-family: 'Baloo Bhai', cursive;
 }

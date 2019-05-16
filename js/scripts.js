@@ -8,5 +8,5 @@ function getJoke() {
   var joke = data.joke;
 
   console.log(joke);
-  select("#joke").innerText = '\"' + joke + '\"';
+  select("#joke").innerText = '\"' + joke + '\" - some dad.';
 })};
