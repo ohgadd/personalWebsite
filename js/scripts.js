@@ -75,7 +75,7 @@ function willingnessMove() {
   var width = 0;
   var id = setInterval(frame, 15);
   function frame() {
-    if (width >=100) {
+    if (width >=110) {
       clearInterval(id);
     } else {
       width++;
