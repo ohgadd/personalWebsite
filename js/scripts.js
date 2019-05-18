@@ -70,12 +70,12 @@ function javascriptMove() {
   }
 }
 
-function willingnessMove() {
-  var elem = document.getElementById("willingnessJS");
+function googlinessMove() {
+  var elem = document.getElementById("googlinessJS");
   var width = 0;
   var id = setInterval(frame, 15);
   function frame() {
-    if (width >=110) {
+    if (width >=100) {
       clearInterval(id);
     } else {
       width++;
@@ -130,7 +130,7 @@ function pageLoaded(){
   cssMove();
   photoshopMove();
   javascriptMove();
-  willingnessMove();
+  googlinessMove();
   teaMove();
   getJoke();
 }
