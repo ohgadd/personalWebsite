@@ -20,7 +20,7 @@ function htmlMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <100){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "Skilled"};
     }
   }
 }
@@ -35,7 +35,7 @@ function cssMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <100){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "Confident"};
     }
   }
 }
@@ -50,7 +50,7 @@ function photoshopMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <80){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "Experienced"};
     }
   }
 }
@@ -65,7 +65,7 @@ function javascriptMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <60){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "Still Learning"};
     }
   }
 }
@@ -80,7 +80,7 @@ function googlinessMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <100){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "<span id='unofficial' class='align-center'><em>Unofficially</em></span>   Professional Googler"};
     }
   }
 }
@@ -95,28 +95,10 @@ function teaMove() {
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
+      if (width <100){elem.innerHTML = width * 1 + "%";}else{elem.innerHTML = "Brew Master"};
     }
+
   }
-}
-
-function growObject() {
-  animation();
-}
-
-function animation() {
-  $(".skillBar").hover(
-    function() {
-      $(this).animate({
-        height: "300px"
-      });
-    },
-    function() {
-      $(this).animate({
-        height: "50px"
-      });
-    }
-  );
 }
 
 //if height is 300px, add descrp
