@@ -125,7 +125,7 @@ function animation() {
 // }
 function keySkillsLoad() {
   var inview = new Waypoint.Inview({
-    element: $('#htmlJS')[0],
+    element: $('#cssJS')[0],
     entered: function(direction) {
       if (keySkillsLoaded == 0){
         htmlMove();
@@ -141,11 +141,10 @@ function keySkillsLoad() {
 }
 
 var keySkillsLoaded = 0;
-console.log('kSL = '+keySkillsLoaded)
+
 function pageLoaded() {
   getJoke();
   keySkillsLoad();
-
 }
 
 document.addEventListener("DOMContentLoaded", function() {
