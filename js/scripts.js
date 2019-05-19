@@ -1,6 +1,7 @@
 function select(selector) {
   return document.querySelector(selector);
 }
+
 function getJoke() {
   $.getJSON("https://icanhazdadjoke.com/", function(data) {
     var joke = data.joke;
